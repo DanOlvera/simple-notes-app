@@ -21,6 +21,10 @@ class NoteViewModel(application: Application): AndroidViewModel(application){
     private val _state = MutableStateFlow<NoteState>(NoteState.Loading)
     val state: StateFlow<NoteState> = _state.asStateFlow()
 
+    init {
+        handleIntent(NoteIntent.LoadNotes)
+    }
+
     fun handleIntent(intent: NoteIntent) {
         when(intent) {
             is NoteIntent.LoadNotes -> loadNotes()
