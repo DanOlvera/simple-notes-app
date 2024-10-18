@@ -36,7 +36,7 @@ fun NoteListScreen(
     Column (
         modifier = Modifier
             .fillMaxSize()
-            .padding(16.dp),
+            .padding(16.dp, 56.dp, 16.dp, 16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
