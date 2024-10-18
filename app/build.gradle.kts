@@ -79,6 +79,8 @@ dependencies {
     implementation(libs.gson)
     implementation(libs.converter.gson)
 
+    implementation(libs.navigation.compose)
+
     implementation ("com.squareup.retrofit2:retrofit:2.11.0")
     implementation ("com.squareup.okhttp3:okhttp:4.9.0")
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.9")
@@ -108,8 +110,6 @@ dependencies {
     testImplementation (libs.core.testing)
 
     implementation("io.coil-kt.coil3:coil-gif:3.0.0-rc01")
-
-    implementation("androidx.navigation:navigation-compose:2.7.0-alpha07")
 
     val room_version = "2.6.1"
 
