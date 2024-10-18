@@ -124,4 +124,10 @@ dependencies {
 
     // optional - Test helpers
     testImplementation("androidx.room:room-testing:$room_version")
+
+    androidTestImplementation ("androidx.test:runner:1.5.2")
+    testImplementation ("androidx.test:core:1.2.0")
+
+    testImplementation ("org.amshove.kluent:kluent-android:1.73")
+
 }
